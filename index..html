@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pasir Wetan Growth Hub | Pendamping UMKM Makanan</title>
+<meta name="theme-color" content="#0f3324">
+<meta name="description" content="Platform pendampingan UMKM makanan Desa Pasir Wetan, Banyumas: profil kesiapan usaha, Growth Assistant berbasis aturan sederhana, panduan kemasan, dan simulasi keuangan.">
+<meta property="og:title" content="Pasir Wetan Growth Hub">
+<meta property="og:description" content="Satu keberhasilan lokal, lebih banyak peluang tumbuh.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--dk:#0f3324;--g1:#1f5a3c;--sage:#8fb298;--lt:#dfead9;--bg:#f5f0e3;--ink:#16291e;--tan:#d9b26f;--mut:#5b6a5f}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:Poppins,system-ui,sans-serif;line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(32px,5.4vw,56px);font-weight:700;letter-spacing:-.02em}h2{font-size:clamp(26px,3.6vw,38px);font-weight:600}h3{font-size:17px;font-weight:600}
+p{margin:0 0 1em}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+a{color:inherit}:focus-visible{outline:3px solid var(--tan);outline-offset:2px}
+.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:20px;justify-content:space-between;padding:12px 24px;background:rgba(15,51,36,.82);backdrop-filter:blur(14px);color:#f5f0e3}
+.brand{display:flex;gap:10px;align-items:center;font:600 16px Poppins;text-decoration:none}.logo{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--tan)}
+.nav nav{display:flex;gap:22px}.nav nav a{text-decoration:none;opacity:.85}.nav nav a:hover{opacity:1}
+.btn{display:inline-block;border:0;border-radius:99px;padding:13px 24px;background:var(--tan);color:var(--dk);font:600 15px 'DM Sans';text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.25)}.btn.sm{padding:9px 18px}.btn.ghost{background:transparent;color:#f5f0e3;box-shadow:inset 0 0 0 2px rgba(245,240,227,.5)}
+.hero{position:relative;overflow:hidden;background:var(--dk);color:#f5f0e3;padding:84px 0 96px}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:drift 16s ease-in-out infinite alternate}
+.b1{width:420px;height:420px;background:#2f8a5a;top:-120px;left:-100px}.b2{width:360px;height:360px;background:var(--tan);opacity:.28;right:-80px;top:80px;animation-delay:-5s}.b3{width:300px;height:300px;background:#4a9d78;bottom:-140px;left:40%;animation-delay:-9s}
+@keyframes drift{to{transform:translate(70px,-50px) scale(1.18)}}@keyframes bob{50%{transform:translateY(-18px)}}
+.hgrid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.pill{display:inline-block;padding:6px 14px;border-radius:99px;background:rgba(255,255,255,.12);font-size:14px}
+.lead{font-size:18px;max-width:54ch;opacity:.92}.acts{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}
+.stats{display:flex;gap:28px;flex-wrap:wrap;list-style:none;padding:0;margin:0;font-size:14px;opacity:.9}.stats b{display:block;font:700 30px Poppins;color:var(--tan)}
+.stage{position:relative;height:440px}.px{position:absolute;transition:transform .15s ease-out}
+.orb{width:180px;height:180px;border-radius:50%;display:grid;place-items:center;font-size:84px;background:radial-gradient(circle at 30% 30%,#f1d9a4,var(--tan) 60%,#a9803f);box-shadow:0 30px 60px rgba(0,0,0,.4);animation:bob 7s ease-in-out infinite}
+.glass{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(14px);box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.fl{width:220px;padding:14px 16px;border-radius:18px;animation:bob 6s ease-in-out infinite}.d2{animation-delay:-2s}.d3{animation-delay:-4s}
+.fl small{display:block;opacity:.8;font-size:13px}.fl b{font:700 26px Poppins}.fl p{margin:4px 0 0;font-size:14px;line-height:1.45}
+.bar{height:8px;border-radius:9px;background:rgba(255,255,255,.2);overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:var(--tan);border-radius:9px}
+.sec{padding:84px 0}.sec.alt{background:var(--lt)}.sub{max-width:62ch;color:var(--mut);margin-bottom:32px}
+.grid4,.grid5{display:grid;gap:16px}.grid4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.grid5{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.card{background:#fffdf6;border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(15,51,36,.09);border:1px solid rgba(15,51,36,.08)}
+.card.key{background:var(--g1);color:#f5f0e3}.card p{margin:0;color:inherit;opacity:.85;font-size:15px}
+.tilt{transform:perspective(700px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s ease-out,box-shadow .2s}.tilt:hover{box-shadow:0 22px 40px rgba(15,51,36,.2)}
+.ic{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--lt);font-size:24px;margin-bottom:12px}
+.glass-l{background:#fffdf6;border-radius:24px;padding:22px;box-shadow:0 30px 60px rgba(15,51,36,.16);border:1px solid rgba(15,51,36,.08)}
+.tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}.tabs button{border:0;background:var(--lt);padding:10px 18px;border-radius:99px;font:500 15px 'DM Sans';cursor:pointer;color:var(--ink)}.tabs .on{background:var(--g1);color:#fff}
+.pn{display:none}.pn.on{display:block}
+.q{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #e6e1d0;flex-wrap:wrap}
+select,input{font:inherit;color:var(--ink);background:#fff;border:1px solid #cfcab6;border-radius:10px;padding:9px 12px}
+#res{margin-top:16px}.rb{margin:10px 0}.rb div{display:flex;justify-content:space-between}.rb .bar{background:var(--lt)}.rb .bar i{background:var(--g1)}
+.chat{height:300px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.m{max-width:80%;padding:10px 14px;border-radius:16px}.m.u{align-self:flex-end;background:var(--g1);color:#fff}.m.a{align-self:flex-start;background:var(--lt)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.chips button{border:1px solid #cfcab6;background:#fff;border-radius:99px;padding:6px 14px;font:14px 'DM Sans';cursor:pointer}
+.row{display:flex;gap:10px}.row input{flex:1}.row .btn{background:var(--g1);color:#fff}
+.hg{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.hg label{display:grid;gap:4px;font-size:14px}
+.out{font-size:18px;margin-top:18px;background:var(--lt);padding:14px 18px;border-radius:14px}
+.road{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;padding:0;margin:0 0 24px}
+.road li{counter-increment:s;background:#fffdf6;border-radius:16px;padding:18px;font-size:14px;color:var(--mut)}
+.road li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--g1);color:#fff;font:600 14px Poppins;margin-bottom:10px}.road b{display:block;color:var(--ink);font-size:16px;margin-bottom:4px}
+.note{border-left:4px solid var(--g1);padding:6px 14px;font-size:14px;color:var(--mut)}
+footer{background:var(--dk);color:#dfead9;padding:30px 0;font-size:14px}footer .wrap{display:flex;flex-direction:column;gap:4px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.hgrid{grid-template-columns:1fr}.stage{height:380px}.nav nav{display:none}.fl{width:180px}.hero{padding-top:56px}}
+@media(prefers-reduced-motion:reduce){*,.blob,.fl,.orb{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#top"><span class="logo">🍄</span>Pasir Wetan Growth Hub</a>
+<nav><a href="#masalah">Masalah</a><a href="#fitur">Fitur</a><a href="#demo">Coba demo</a><a href="#rencana">Rencana</a></nav>
+<a class="btn sm" href="#demo">Coba sekarang</a>
+</header>
+<main id="top">
+<section class="hero">
+<i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+<div class="wrap hgrid">
+<div>
+<p class="pill">ACC #NextGreen Leaders Challenge 2026</p>
+<h1>Satu keberhasilan lokal, lebih banyak peluang tumbuh.</h1>
+<p class="lead">Growth Hub membantu sekitar 20 UMKM makanan binaan di Desa Pasir Wetan mengetahui apa yang perlu diperbaiki lebih dulu, lalu memberi langkah yang bisa langsung dikerjakan.</p>
+<div class="acts"><a class="btn" href="#demo">Coba demo interaktif</a><a class="btn ghost" href="#fitur">Lihat lima modul</a></div>
+<ul class="stats"><li><b>±20</b>UMKM makanan binaan</li><li><b>5</b>modul pendampingan</li><li><b>1</b>produk benchmark nasional</li></ul>
+</div>
+<div class="stage" aria-hidden="true">
+<div class="px" data-d="14" style="top:42%;left:50%;margin:-90px 0 0 -90px"><div class="orb">🍄</div></div>
+<div class="px" data-d="30" style="top:2%;left:0"><div class="fl glass"><small>Ilustrasi skor kesiapan</small><b>72%</b><div class="bar"><i style="width:72%"></i></div></div></div>
+<div class="px" data-d="40" style="top:30%;right:0"><div class="fl glass d2"><small>Growth Assistant</small><p>Mulai dari target konsumen, berat bersih, dan karakter produk.</p></div></div>
+<div class="px" data-d="24" style="bottom:2%;left:12%"><div class="fl glass d3"><small>Contoh HPP per bungkus</small><b>Rp3.300</b></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="masalah"><div class="wrap">
+<h2>Kesiapan usaha belum merata</h2>
+<p class="sub">Keripik jamur sudah menembus pasar nasional. Banyak UMKM lain masih bertahan di pasar sekitar dengan kemasan sederhana. Empat kesenjangan ini yang ingin ditutup.</p>
+<div class="grid4 tilt-wrap">
+<article class="card tilt"><h3>Kesiapan produk</h3><p>Kemasan, identitas, dan legalitas produk masih beragam.</p></article>
+<article class="card tilt"><h3>Kesiapan pasar</h3><p>Saluran promosi dan distribusi berbeda jauh antar usaha.</p></article>
+<article class="card tilt"><h3>Pengelolaan usaha</h3><p>Pencatatan kas dan perhitungan HPP belum rutin.</p></article>
+<article class="card tilt key"><h3>Transfer pengetahuan</h3><p>Praktik yang berhasil belum terdokumentasi untuk dipelajari bersama.</p></article>
+</div></div></section>
+
+<section class="sec alt" id="fitur"><div class="wrap">
+<h2>Lima modul, satu alur perbaikan</h2>
+<p class="sub">Bukan marketplace baru. Growth Hub berfokus pada kesiapan usaha dan tindakan nyata.</p>
+<div class="grid5 tilt-wrap">
+<article class="card tilt"><span class="ic">📋</span><h3>Profil kesiapan</h3><p>Penilaian singkat yang memetakan kebutuhan setiap usaha.</p></article>
+<article class="card tilt"><span class="ic">🤖</span><h3>Growth Assistant</h3><p>Rekomendasi sesuai profil usaha dan panduan lokal yang sudah dikurasi.</p></article>
+<article class="card tilt"><span class="ic">📦</span><h3>Panduan kemasan</h3><p>Checklist pemilihan kemasan dan isi label.</p></article>
+<article class="card tilt"><span class="ic">🧮</span><h3>Smart Cashbook</h3><p>Catat transaksi dan hitung HPP serta laba.</p></article>
+<article class="card tilt"><span class="ic">🏪</span><h3>Katalog produk</h3><p>Profil produk dengan tombol pesan lewat WhatsApp.</p></article>
+</div></div></section>
+
+<section class="sec" id="demo"><div class="wrap">
+<h2>Coba langsung</h2>
+<p class="sub">Demo prototipe. Jawaban asisten dibuat dari aturan sederhana dan belum memakai API AI. Demo ini menggunakan aturan sederhana, bukan API AI. Data input tidak dikirim ke server dan tidak disimpan permanen; hasil hanya tersedia selama halaman terbuka.</p>
+<div class="demo glass-l">
+<div class="tabs" role="tablist"><button class="on" data-p="p1" role="tab">Kesiapan</button><button data-p="p2" role="tab">Asisten</button><button data-p="p3" role="tab">Hitung HPP</button></div>
+<div class="pn on" id="p1"><div id="qs"></div><button class="btn" id="calc" type="button">Lihat hasil</button><div id="res"></div></div>
+<div class="pn" id="p2"><div class="chat" id="chat" aria-live="polite"></div><div class="chips" id="chips"></div><div class="row"><input id="qi" placeholder="Tulis pertanyaan tentang kemasan, branding, atau keuangan" aria-label="Pertanyaan"><button class="btn" id="send" type="button">Kirim</button></div></div>
+<div class="pn" id="p3"><div class="hg"><label>Bahan baku (Rp)<input id="h1" type="number" value="150000"></label><label>Tenaga kerja (Rp)<input id="h2" type="number" value="50000"></label><label>Kemasan (Rp)<input id="h3" type="number" value="40000"></label><label>Biaya lain (Rp)<input id="h4" type="number" value="20000"></label><label>Jumlah bungkus<input id="h5" type="number" value="60"></label><label>Target laba (%)<input id="h6" type="number" value="30"></label></div><p class="out" id="hr"></p></div>
+</div></div></section>
+
+<section class="sec alt" id="rencana"><div class="wrap">
+<h2>Enam tahap menuju pengelolaan lokal</h2>
+<p class="sub">Pelaksanaan 1 Desember 2026 sampai 31 Januari 2027, dengan pengukuran dampak pada 25 sampai 31 Januari. Jadwal akhir mengikuti ketentuan panitia.</p>
+<ol class="road">
+<li><b>Pemetaan UMKM</b>Profil dan kebutuhan tiap usaha.</li><li><b>Kurasi pengetahuan</b>Panduan bisnis lokal.</li><li><b>Pengembangan</b>Website dan AI.</li><li><b>Pengujian</b>Bersama pengguna nyata.</li><li><b>Pendampingan</b>Pelatihan dan adopsi.</li><li><b>Evaluasi dan serah terima</b>Dikelola admin lokal.</li>
+</ol>
+<p class="note">Target pilot: ≥15 profil usaha lengkap, ≥12 UMKM memakai asisten, ≥10 UMKM mencatat mingguan. Ini target, belum tercapai. Baseline diukur sebelum pelaksanaan.</p>
+</div></section>
+</main>
+<footer><div class="wrap"><b>Pasir Wetan Growth Hub</b><span>Dikembangkan oleh tim RAWR · ACC #NextGreen Leaders Challenge 2026</span><span>Desa Pasir Wetan, Karanglewas, Banyumas, Jawa Tengah</span></div></footer>
+<script>
+const $=s=>document.querySelector(s),rp=n=>'Rp'+Math.round(n).toLocaleString('id-ID');
+const calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const hero=$('.hero');
+if(!calm)hero.addEventListener('mousemove',e=>{const r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+document.querySelectorAll('.px').forEach(p=>{const d=+p.dataset.d;p.style.transform=`translate(${x*d}px,${y*d}px)`})});
+if(!calm)document.querySelectorAll('.tilt').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*9+'deg');c.style.setProperty('--rx',(.5-(e.clientY-r.top)/r.height)*9+'deg')});c.addEventListener('mouseleave',()=>{c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')})});
+const revealTargets=document.querySelectorAll('.card,.road li,.demo');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+  revealTargets.forEach(el=>{el.classList.add('rv');io.observe(el)});
+}else{
+  revealTargets.forEach(el=>el.classList.add('in'));
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.pn').forEach(p=>p.classList.toggle('on',p.id===b.dataset.p))});
+const A={Produk:['Kemasan sudah menarik dan rapi','Nama dan label sudah konsisten','Legalitas usaha sudah diurus'],Pemasaran:['Dijual di lebih dari satu saluran','Rutin promosi di media sosial'],Keuangan:['Transaksi dicatat rutin','HPP sudah dihitung'],Pengetahuan:['Pernah belajar dari UMKM lain']};
+const T={Produk:'perkuat kemasan dan label lebih dulu.',Pemasaran:'tambah satu saluran promosi yang mudah dikelola.',Keuangan:'mulai catat transaksi harian dan hitung HPP.',Pengetahuan:'dokumentasikan praktik usaha dan belajar dari UMKM benchmark.'};
+let n=0,nm=[],prof=null;
+$('#qs').innerHTML=Object.entries(A).map(([a,qs])=>qs.map(q=>{nm.push(a);return`<div class="q"><span>${q}</span><select id="q${n++}"><option value="0">Belum</option><option value="1">Sebagian</option><option value="2">Sudah</option></select></div>`}).join('')).join('');
+$('#calc').onclick=()=>{const s={},m={};nm.forEach((a,i)=>{s[a]=(s[a]||0)+ +$('#q'+i).value;m[a]=(m[a]||0)+2});
+const p=Object.keys(s).map(a=>[a,Math.round(s[a]/m[a]*100)]).sort((x,y)=>x[1]-y[1]);prof=p[0][0];
+$('#res').innerHTML=p.map(([a,v])=>`<div class="rb"><div><span>${a}</span><b>${v}%</b></div><div class="bar"><i style="width:${v}%"></i></div></div>`).join('')+`<p><b>Prioritas: ${prof}.</b> Saran awal: ${T[prof]}</p>`};
+const chat=$('#chat');
+function msg(t,c){const d=document.createElement('div');d.className='m '+c;d.textContent=t;chat.append(d);chat.scrollTop=chat.scrollHeight}
+function ans(q){q=q.toLowerCase();
+if(/legal|pirt|halal|bpom|sertifikat|izin/.test(q))return'Saya tidak menentukan legalitas atau sertifikasi produk. Tanyakan persyaratan resminya ke dinas terkait atau pendamping desa.';
+if(/gizi|kedaluwarsa|expired|tahan/.test(q))return'Klaim gizi dan masa kedaluwarsa memerlukan bukti, misalnya uji produk. Saya tidak memberi angka tanpa dasar itu.';
+if(/vendor|supplier/.test(q))return'Saya tidak mengarang harga vendor. Minta penawaran tertulis dari dua atau tiga pemasok, lalu masukkan ke kalkulator HPP.';
+if(/kemas|label|packag/.test(q))return'Tentukan berat bersih dan target konsumen, pilih kemasan yang melindungi dari lembap, lalu lengkapi label: nama produk, komposisi, berat bersih, dan kontak.';
+if(/brand|nama|logo|identitas/.test(q))return'Mulai dari tiga hal: siapa pembelinya, apa ciri khas produk, dan nama yang mudah diingat. Samakan warna dan gaya tulisan di kemasan serta media sosial. Pemilik usaha perlu memeriksa semua usulan.';
+if(/pasar|promo|jual|instagram|whatsapp|konten/.test(q))return'Pilih satu saluran dulu, misalnya WhatsApp Business atau Instagram. Buat tiga konten: foto produk, proses pembuatan, dan testimoni. Cantumkan kontak pemesanan.';
+if(/catat|hpp|untung|laba|harga|kas|keuangan/.test(q))return'Catat setiap pemasukan dan pengeluaran, pisahkan uang usaha dari uang rumah tangga, lalu hitung HPP per bungkus sebelum menentukan harga jual. Coba tab Hitung HPP.';
+if(/prioritas|langkah|perbaikan/.test(q))return prof?`Dari penilaian Anda, area ${prof} paling perlu diperkuat. Pilih satu tindakan kecil minggu ini lalu ukur hasilnya.`:'Isi tab Kesiapan dulu agar saran sesuai kondisi usaha.';
+return'Saya belum punya panduan untuk pertanyaan itu. Coba tanya soal kemasan, branding, pemasaran, atau keuangan.'}
+function ask(q){if(!q.trim())return;msg(q,'u');setTimeout(()=>msg(ans(q),'a'),350);$('#qi').value=''}
+msg('Halo, saya Growth Assistant. Pilih pertanyaan di bawah atau tulis sendiri.','a');
+['Bagaimana memperbaiki branding keripik pisang saya?','Apa isi label kemasan?','Bagaimana menghitung harga jual?','Apakah saya perlu izin PIRT?'].forEach(t=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.onclick=()=>ask(t);$('#chips').append(b)});
+$('#send').onclick=()=>ask($('#qi').value);$('#qi').onkeydown=e=>{if(e.key==='Enter')ask($('#qi').value)};
+function hpp(){
+  const g=i=>Math.max(0,+$('#h'+i).value||0);
+  const total=g(1)+g(2)+g(3)+g(4), jumlah=g(5), target=g(6);
+  if(jumlah<=0){$('#hr').textContent='Masukkan jumlah bungkus lebih dari 0 untuk menghitung HPP.';return;}
+  const h=total/jumlah, jual=h*(1+target/100);
+  $('#hr').innerHTML=`Total biaya produksi <b>${rp(total)}</b><br>HPP per bungkus <b>${rp(h)}</b><br>Harga jual indikatif (HPP + ${target}% target laba) <b>${rp(Math.ceil(jual/100)*100)}</b><small style="display:block;margin-top:6px;color:#5b6a5f;font-size:13px">Simulasi menggunakan markup atas HPP; sesuaikan dengan biaya aktual dan kondisi pasar.</small>`;
+}
+document.querySelectorAll('.hg input').forEach(e=>e.addEventListener('input',hpp));hpp();
+
+</script>
+
+</body>
+</html>
